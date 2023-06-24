@@ -1,0 +1,16 @@
+<mat-list-option
+  [selected]="finishedTask"
+  [disabled]="finishedTask"
+  (click)="endTask()"
+  togglePosition="before"
+  class="option"
+>
+  {{ task.description }}
+  <span
+    class="material-symbols-outlined"
+    (click)="deleteTask()"
+    matListItemIcon
+  >
+    delete
+  </span>
+</mat-list-option>

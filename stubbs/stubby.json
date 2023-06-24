@@ -1,0 +1,30 @@
+[
+    {
+        "request": {
+          "url": "/allTasks",
+          "method": "GET"
+        },
+        "response": {
+          "status": 200,
+          "file": "data/todo-tasks.json"
+        }
+      },
+      {
+        "request": {
+          "url": "/task",
+          "method": "POST"
+        },
+        "response": {
+          "status": 200
+        }
+      },
+      {
+        "request": {
+          "url": "/deleteTask",
+          "method": "POST"
+        },
+        "response": {
+          "status": 200
+        }
+      }
+]

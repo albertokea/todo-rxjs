@@ -1,0 +1,14 @@
+mat-list-option.option {
+  .material-symbols-outlined {
+    display: none;
+  }
+  .mat-mdc-list-item-icon.material-symbols-outlined.mdc-list-item__end {
+    opacity: .67;
+    cursor: pointer;
+  }
+}
+mat-list-option.option:hover {
+  span.material-symbols-outlined {
+    display: block;
+  }
+}

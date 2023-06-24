@@ -1,0 +1,23 @@
+@import "../../../styles.scss";
+
+.todo-list-container,
+.filter-container {
+  margin-top: $margin;
+  display: flex;
+  .filter-container {
+    justify-content: space-between;
+    .count {
+        display: flex;
+        align-items: center;
+    }
+  }
+  .todo-content {
+    width: 50%;
+  }
+
+  .todo-list {
+    max-height: 75vh;
+    overflow: auto;
+    border: 1px solid $grey;
+  }
+}

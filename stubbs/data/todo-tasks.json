@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "description": "Go to dentist",
+        "status": 1
+    },
+    {
+        "id": 2,
+        "description": "Go to the mall",
+        "status": 0
+    },
+    {
+        "id": 3,
+        "description": "Call mom",
+        "status": 0
+    },
+    {
+        "id": 4,
+        "description": "Buy tickets for Paul's concert",
+        "status": 0
+    }
+]

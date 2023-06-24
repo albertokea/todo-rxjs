@@ -1,0 +1,15 @@
+<form [formGroup]="todoForm" class="todo-form-container">
+  <mat-form-field>
+    <input matInput formControlName="description" placeholder="Description" />
+    <mat-error>Required field</mat-error>
+  </mat-form-field>
+
+  <button
+    mat-raised-button
+    color="primary"
+    [disabled]="todoForm.invalid"
+    (click)="addTask()"
+  >
+    Add
+  </button>
+</form>

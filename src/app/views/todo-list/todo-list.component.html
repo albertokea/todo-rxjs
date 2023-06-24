@@ -1,0 +1,24 @@
+<div class="todo-list-container">
+  <app-form-todo class="todo-content" (newTask)="addTask($event)"></app-form-todo>
+
+  <div class="todo-content">
+    <div class="filter-container">
+      <app-filter-todo (filterChange)="changeFilter($event)"></app-filter-todo>
+      <span class="count"
+        >{{ taskService.tasksCount | async }} items ({{
+          taskService.pendingTasksCount | async
+        }}
+        pending)</span
+      >
+    </div>
+
+    <mat-selection-list #todoList class="todo-list">
+      <app-item-todo
+        *ngFor="let item of tasks$ | async"
+        [task]="item"
+        (changedTask)="changeTask($event)"
+        class="todo-list-content"
+      ></app-item-todo>
+    </mat-selection-list>
+  </div>
+</div>
